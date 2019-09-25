@@ -21,12 +21,12 @@ export default class EpicScreen extends Component<IProps, IState> {
     selectedDate: null,
   }
 
-  private async fetchImageData(date:Date) {
-    await this.props.epicStore!.fetchImage(date);
+  private fetchImageData(date:Date) {
+    this.props.epicStore!.fetchImage(date);
   }
 
-  private async fetchAvailableDates() {
-    await this.props.epicStore!.loadAvailableDates();
+  private fetchAvailableDates() {
+    this.props.epicStore!.loadAvailableDates();
   }
 
   public componentDidMount() {
