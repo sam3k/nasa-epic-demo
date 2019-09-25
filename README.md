@@ -1,8 +1,9 @@
 # NASA Epic API Demo
 
 ## Requirements
-Node version 11.10.1
-Yarn
+  * Node version 11.10.1
+  * Yarn
+  * TypeScript `npm install -g typescript`  (This might not be necessary as it is included in package.json) Try without it first!
 
 ## Installation
 CD to the directory and run:
