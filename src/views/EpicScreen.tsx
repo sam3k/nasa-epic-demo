@@ -34,7 +34,7 @@ export default class EpicScreen extends Component<IProps, IState> {
   }
 
   private onDateChange = (date: Date) => {
-    const birthday = moment(date).set('year', 2019).toDate();
+    const birthday = moment(date).set('year', (new Date()).getFullYear()).toDate();
 
     if (date) {
       this.setState({selectedDate: date});
